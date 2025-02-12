@@ -53,9 +53,9 @@ def get_stats():
     
     soup = BeautifulSoup(html, "html.parser")
     
-    # Парсим все div с классом "magritte-content___-hu36_4-0-30"
+    # Парсим все div с классом "magritte-content___-hu36_4-0-32"
     try:
-        exp_label = soup.find_all("div" , class_="magritte-content___-hu36_4-0-30")
+        exp_label = soup.find_all("div" , class_="magritte-content___-hu36_4-0-32")
         list_of_words = []
         for num in exp_label:
             list_of_words.append(num.text.replace("\xa0", " ").replace("\u202f", ""))
